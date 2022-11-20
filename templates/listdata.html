@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{url_for('static', filename='gaya.css')}}" />
+    <title>Hai Wiya</title>
+    
+  <body>
+    <nav>
+      <h1>List Data Mahasiswa</h1>
+      <ul>
+        <li><a href="{{ url_for('home')}}">Home</a></li>
+        <li><a href="{{ url_for('tambahdata')}}">Tambah Data</a></li>
+        <li><a href="{{ url_for('listdata')}}" class="active">List Data</a></li>
+        <li><a href="{{ url_for('loginmhs')}}">Login</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Alamat</th>
+            <th>Tgl Lahir</th>
+            <th>Jenis Kelamin</th>
+            <th>Email</th>
+            <th>Update</th>
+           
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Zaenul Alqusairi</td>
+            <td>Lokon/Sepit/Keruak/Lotim</td>
+            <td>2001-11-11</td>
+            <td>Laki-Laki</td>
+            <td>EL@GAMIL.COM</td>
+           
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Ira Miatun</td>
+            <td>Masbagek/Masbagek/Masbagek/Lotim</td>
+            <td>1999-11-11</td>
+            <td>Perempuan</td>
+            <td>iramiatun@gamil.com</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Novia Ardani</td>
+            <td>Jenggik/Jenggik/Jenggik/Lotim</td>
+            <td>2001-11-11</td>
+            <td>Perempuan</td>
+            <td>noviaardani@gmail.com</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Ruswanti Mulyana</td>
+            <td>Sikur/Sikur/Sikur/Lotim</td>
+            <td>2001-11-11</td>
+            <td>Perempuan</td>
+            <td>yana@gmail.com</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Wardatul Ummi</td>
+            <td>Lenek/Lenek/Lenek/Lotim</td>
+            <td>2001-11-11</td>
+            <td>Perempuan</td>
+            <td>war@gmail.com</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Rizqa Ulfatulrahmi</td>
+            <td>Rensing/Rensing/Rensing/Lotim</td>
+            <td>2001-11-11</td>
+            <td>Perempuan</td>
+            <td>Rizqa@gamil.com</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Rabiatul Adawiyah</td>
+            <td>Tengeh/Sepit/Keruak/Lotim</td>
+            <td>2001-10-28</td>
+            <td>Perempuan</td>
+            <td>wiya@gamil.com</td>
+          </tr>
+           <tr>
+            <td>8</td>
+            <td>Ulfaturrahmi</td>
+            <td>lenek/Lenek/Lotim</td>
+            <td>2001-10-28</td>
+            <td>Perempuan</td>
+            <td>ulfa@gamil.com</td>
+            <td>
+              <a class="btn btn-success btn-sm">Ubah</a>|
+              <a class="btn btn-danger btn-sm">Delete</a>
+            </td>
+          </tr>
+          
+           
+          
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

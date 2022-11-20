@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{url_for('static', filename='gaya.css')}}" />
+    <title>Hai Wiya</title>
+  </head>
+  <body>
+    <nav>
+      <h1>Selamat Datang di Website !</h1>
+      <h2>copyright@ by <span>@wiyael_masrur</span></h2>
+      <ul>
+        <li><a href="{{ url_for('home')}}" class="active">Home</a></li>
+        <li><a href="{{ url_for('tambahdata')}}">Tambah Data</a></li>
+        <li><a href="{{ url_for('listdata')}}">List Data</a></li>
+        <li><a href="{{ url_for('loginmhs')}}">Login</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <img src="{{url_for('static', filename='1.jpeg')}}" width="150px" />
+      <h1><marquee direction="top">Hai saya😃 Rabiatul Adawiyah</marquee></h1>
+      <p>
+        Hai semua 🤗 , aku disini lagi belajar buat website menggunakan bahasa
+        pemerograman python loh , aku belajar ini di Mata Kuliah Pemerograman 1.
+        Seruloh belajarnya yuk temen-temen juga simak apa yang udah aku di ajarin
+        siapa tau kn nanti temen-temen juga butuh, karena shareing ilmu itu menyenangkan.
+      </p>
+      <p align="justify">
+         1. python
+        Bahasa pemrograman Python sendiri pertama kali dirilis ke pasar di tahun 1991. Penciptanya adalah ahli IT asal Belanda bernama Guido van Rossum di Amsterdam. 
+        Tak lama usai peluncurannya, Van Rossum coba mengevaluasi kompatibilitas bahasa pemrograman ciptaannya dengan tren komputer di dunia saat ini. 
+        Setelah itu, Van Rossum terus melakukan serangkaian perbaikan dan penyempurnaan pada versi selanjutnya. Lalu Python kemudian dirilis ulang pada tahun 1995. 
+        Seperti belum puas, Van Rossum terus menerus melakukan perbaikan dan penyempurnaan. Sampai kemudian di tahun 2000, ia meluncurkan versi ketiga Python. 
+      </p>
+    </div>
+  </body>
+</html>
